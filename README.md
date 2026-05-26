@@ -1,6 +1,6 @@
 # Restaurante Digital com RabbitMQ, Node.js e Docker
 
-Projeto para o experimento prático de mensageria com RabbitMQ.
+Projeto para o experimento prático de mensageria com RabbitMQ. [Link do Repo](https://github.com/Grogww/TesteMensageriaComNode)
 
 ## Ideia do projeto
 
