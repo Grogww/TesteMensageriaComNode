@@ -1,0 +1,19 @@
+{
+  "name": "restaurante-rabbitmq",
+  "version": "1.0.0",
+  "description": "Experimento prático de mensageria com RabbitMQ, Node.js e Docker - Restaurante Digital",
+  "main": "src/producer.js",
+  "scripts": {
+    "send": "node src/producer.js",
+    "send:5": "node src/producer.js --count=5",
+    "consumer:cozinha": "node src/consumerCozinha.js",
+    "consumer:pagamento": "node src/consumerPagamento.js",
+    "consumers": "concurrently \"npm run consumer:cozinha\" \"npm run consumer:pagamento\"",
+    "start": "npm run consumers"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7"
+  }
+}
